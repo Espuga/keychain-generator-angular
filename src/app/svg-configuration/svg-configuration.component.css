@@ -1,0 +1,42 @@
+label {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+select{
+    background: #ddd;
+}
+.input-holder{
+    margin-bottom: .875rem ;
+    display: inline-block;
+    /* white-space:nowrap; */
+    box-shadow: 0 6px 12px #0002;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    background-color: #fff;
+    width: 90%;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.input{
+    padding: 0.375rem 0.5rem;
+    border: 2px solid #d4d6d5 ; /* coral color*/
+    border-radius: 0.25rem;
+    outline: none;
+    display: inline-block;
+    /* margin-left: 0.25rem; */
+    font-size: .9rem;
+    
+}
+.input:focus{
+    border: 2px solid #FF7F50;
+}
+
+.holePositionLabel{
+    display: inline-block;
+}
+.holePosition {
+    width: 90%;
+}

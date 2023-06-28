@@ -1,0 +1,15 @@
+#left{
+    width: 45%;
+    float: left;
+    border-right: 1px solid gray;
+    padding-right: 5%;
+}
+.right{
+    width: 45%;
+    float: right;
+}
+#general::after{
+    content: "";
+    display: table;
+    clear: both;
+}

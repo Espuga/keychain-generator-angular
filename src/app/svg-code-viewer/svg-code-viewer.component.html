@@ -1,0 +1,10 @@
+<div class="textarea-container" id="textarea-container">
+    <span class="confirmation-message" *ngIf="showMessage">{{ alertMessage }}</span>
+    <img 
+        src="./../../assets/icons/copy-outline.svg" 
+        width="4%" 
+        id="copy-icon"
+        (click)="copyCode()"
+        >
+    <textarea id="outline-svg" readonly [value]="generateSvgService.codeViewer"></textarea>
+</div>
