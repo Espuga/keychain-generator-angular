@@ -6,5 +6,5 @@
         id="copy-icon"
         (click)="copyCode()"
         >
-    <textarea id="outline-svg" readonly [value]="generateSvgService.codeViewer"></textarea>
+    <textarea id="outline-svg" readonly [value]="generateSvgService.codeViewer" [(ngModel)]="textareaValue"></textarea>
 </div>

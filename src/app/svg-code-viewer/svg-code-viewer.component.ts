@@ -8,9 +8,13 @@ import { GenerateSvgService } from './../generate-svg.service';
 })
 export class SvgCodeViewerComponent {
   showMessage: boolean = false;
-  alertMessage: string = "Copied"
+  alertMessage: string = "Copied";
+  
+  textareaValue: any;
 
-  constructor (public generateSvgService: GenerateSvgService){
+  constructor (
+    public generateSvgService: GenerateSvgService
+    ){
     
   }
 

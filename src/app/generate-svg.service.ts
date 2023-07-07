@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as makerjs from 'makerjs';
 import * as opentype from 'opentype.js';
+import { saveAs } from 'file-saver';
 
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -248,6 +249,12 @@ export class GenerateSvgService {
       this.codeViewer = svg;
 
       
+    }
 
+    downloadSVG(){
+      const svgCode = this.codeViewer;
+      //console.log(svgCode);
+      const blob = new Blob([svgCode], { type: 'image(svg+xml' });
+      saveAs(blob, 'clauer.svg');
     }
 }

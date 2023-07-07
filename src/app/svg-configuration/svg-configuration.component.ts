@@ -9,7 +9,9 @@ import { GenerateSvgService } from './../generate-svg.service';
 })
 export class SvgConfigurationComponent {
 
-  constructor(public generateSvgService: GenerateSvgService) { }
+  constructor(
+    public generateSvgService: GenerateSvgService,
+    ) { }
 
   changeDivSize(identifier: string){
     const divElement = document.getElementById(identifier);

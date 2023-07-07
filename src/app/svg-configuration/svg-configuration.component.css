@@ -39,4 +39,25 @@ select{
 }
 .holePosition {
     width: 90%;
+    cursor: pointer;
+}
+#input-holder-button {
+    display: flex;
+    justify-content: center;
+}
+#bt_download {
+    padding: 5px 10px;
+    font-size: 120%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: blue;
+    box-shadow: 0 6px 12px #0002;
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+#fontSelector {
+    cursor: pointer;
 }
